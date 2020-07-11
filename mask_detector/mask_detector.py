@@ -1,5 +1,6 @@
 #Import necessary packages
-import RPi.GPIO as gpio
+if use_motors:
+	import RPi.GPIO as gpio
 import time
 from tensorflow.keras.models import load_model
 import numpy as np

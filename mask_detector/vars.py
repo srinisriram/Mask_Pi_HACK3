@@ -1,6 +1,6 @@
-use_email = True
+use_email = False
 
-use_motors = True
+use_motors = False
 
 MOTOR1_FORWARD_GPIO=4
 
