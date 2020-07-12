@@ -22,9 +22,9 @@ def detect(img, faceModel, maskModel):
 	#Go through each detection
 	for x in range(0, detections.shape[2]):
 		#extract the confidence from each detection
-		confidence = detections[0, 0, x, 2]
+		conf = detections[0, 0, x, 2]
 
-		if confidence > 0.5:
+		if conf > 0.5:
 			#Compute the bounding box coords if the confidence of the face detection is greater than 0.5
 			box = detections[0, 0, x, 3:7] * np.array([w, h, w, h])
 			(startX, startY, endX, endY) = box.astype("int")
