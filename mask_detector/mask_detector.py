@@ -2,6 +2,7 @@
 from vars import use_email, use_motors, MOTOR1_FORWARD_GPIO, ON, OFF
 if use_motors:
 	import RPi.GPIO as gpio
+	from setup_gpio import setup_gpio
 import time
 from tensorflow.keras.models import load_model
 import numpy as np
@@ -9,7 +10,7 @@ import cv2
 from detect import detect
 from gamma import gamma
 from send_email import send_email
-from setup_gpio import setup_gpio
+
 
 
 if use_motors: 
