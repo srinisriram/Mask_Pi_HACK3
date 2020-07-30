@@ -21,7 +21,7 @@ if use_motors:
 #Load all the models, and start the camera stream
 faceModel = cv2.dnn.readNet("models/deploy.prototxt", "models/res10_300x300_ssd_iter_140000.caffemodel")
 faceModel.setPreferableTarget(cv2.dnn.DNN_TARGET_MYRIAD)
-maskModel = load_model("models/mask_detector.h5")
+maskModel = load_model("models/mask_detector_final.h5")
 
 stream = cv2.VideoCapture(0)
 
